@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "../../img/Gallery/lakewoodOaks/interna2.jpg",
           "../../img/Gallery/lakewoodOaks/interna3.jpg",
           "../../img/Gallery/lakewoodOaks/interna4.jpg",
-          "../../img/Gallery/lakewoodOaks/interna5.jpg"
+          "../../img/Gallery/lakewoodOaks/interna5.jpg",
           // Agrega todas las imágenes de la página 1 aquí
         ];
         break;
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "../../img/Gallery/lakewoodOaks/interna2.jpg",
           "../../img/Gallery/lakewoodOaks/interna3.jpg",
           "../../img/Gallery/lakewoodOaks/interna4.jpg",
-          "../../img/Gallery/lakewoodOaks/interna5.jpg"
+          "../../img/Gallery/lakewoodOaks/interna5.jpg",
         ]; // Página por defecto sin imágenes
     }
 
