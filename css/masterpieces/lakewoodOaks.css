@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.nav_contenedor {
+  background-color: #ffffff;
+  width: 96%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  /* gap: 0%; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.focus {
+  color: #ffcd1a !important;
+}
+.nav__logo {
+  width: 123px;
+  height: 27px;
+}
+.nav__items {
+  width: 38rem;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav__item {
+  display: flex;
+  align-items: flex-end;
+}
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+.nav_social-media {
+  width: 106px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.social-media__logos {
+  width: 30px;
+  height: 30px;
+  list-style: none;
+}
+.contenedor {
+  width: 100%;
+  height: 86vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.aside_contenedor {
+  height: 90%;
+  width: 42%;
+  background-image: url(../../img/masterpieces/PORTADA\ LAKEWOOD\ OKAS.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin-right: 67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theironportada{
+  background-image: url(../../img/masterpieces/PORTADA\ THE\ IRON\ ROOTS.png)!important;
+}
+.themaintown{
+  background-image: url(../../img/masterpieces/PORTADA\ THE\ MAIN\ TOWN.png)!important;
+}
+.submenu-items {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.mision-contenedor {
+  height: 34.5rem;
+  width: 72%;
+  background-color: #ffcd1a;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  padding: 0px 28% 0px 0px;
+  border-radius: 320px 0px 0px 320px;
+  position: relative;
+  justify-content: center;
+}
+.mision-title {
+  width: fit-content;
+  height: 44px;
+  font-size: 20px;
+  display: flex;
+  background: linear-gradient(to right, #030303 90%, white 10%);
+  padding: 0px 2.5rem 0px 1rem;
+  color: white;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.mision-web {
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+  height: 23px;
+  width: 107px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  font-weight: 600;
+}
+.mision-parrafo {
+  width: 22rem;
+  height: 38vh;
+  font-size: 20;
+  text-align: justify;
+  padding: 35 0 0 0;
+}
+.button_next {
+  width: 123px;
+  height: 27px;
+  text-align: center;
+  background-color: #030303;
+  color: #ffffff;
+  font-size: 11px;
+  border: none;
+}
+.button__link {
+  text-decoration: none;
+  color: #ffffff;
+  position: absolute;
+  margin-top: 35%;
+  padding: 10px;
+}
+.open_gallery {
+  height: 422px;
+  width: 469px;
+  border-radius: 221px 0px 0px 221px;
+  /* background-color: red; */
+  background-image: url(../../img/masterpieces/portadalake.png);
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.gallery_action {
+  height: 78px;
+  width: 78px;
+  animation-name: girarYEscalar;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes girarYEscalar {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(1.3) rotate(360deg);
+  }
+}
+.menu_pieces {
+  height: 289px;
+}
+.sub_menu {
+  display: flex;
+}
+.menu_img {
+  width: 166px;
+  height: 346px;
+}
+.nav_sub-menu {
+  display: flex;
+  width: 166px;
+  height: 231px;
+  align-content: space-between;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-height: 231px; /* Establece una altura máxima para el contenedor */
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+  /* overflow-y: hidden; */
+}
+.nav_sub-menu:hover {
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+}
+.nav_sub-menu::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento */
+  /* height: 500px; */
+  padding: 20px;
+}
+.nav_sub-menu::-webkit-scrollbar-track {
+  background-color: #ffcd1a; /* Fondo de la barra de desplazamiento */
+  padding: 20px;
+  /* height: 500px; */
+}
+.nav_sub-menu::-webkit-scrollbar-thumb {
+  background: #ffffff; /* Color de la barra de desplazamiento */
+  border-radius: 30px; /* Bordes redondeados de la barra */
+  height: 50px;
+}
+.nav__itemss {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  height: 81%;
+  gap: 27px;
+  justify-content: space-between;
+}
+.nav__itemsss {
+  list-style: none;
+}
+.item_home {
+  height: 19px;
+  margin-top: 11px;
+}
+.nav__links {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* ----------------------------- AQUI INICIA LA GALERIA ----------------- */
+.gallery-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Translucidez */
+  z-index: 1000;
+}
+
+.gallery-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.gallery-controls {
+  position: absolute;
+  top: 50%;
+  left: 9rem;
+  right: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.gallery-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.gallery-counter {
+  color: #fff;
+  font-size: 15px;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(172, 169, 169, 0.8);
+  border-radius: 4px;
+}
+.gallery-close {
+  font-size: 24px;
+  /* top: 10px; */
+  /* padding: 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: rgba(172, 169, 169, 0.8);
+  color: white;
+  border-radius: 4px;
+}
+.gallery-cansado {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  height: 7.1rem;
+  gap: 33%;
+  flex-direction: row-reverse;
+  align-items: center;
+}

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.nav_contenedor {
+  background-color: #ffffff;
+  width: 96%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.nav__logo {
+  width: 123px;
+  height: 27px;
+}
+.nav__items {
+  width: 38rem;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav__item {
+  display: flex;
+  align-items: flex-end;;
+}
+  .nav__link {
+    text-decoration: none;
+    color: #000000;
+  }
+  .nav_social-media {
+    width: 106px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-media__logos {
+    width: 30px;
+    height: 30px;
+    list-style: none;
+  }
+  .contenedor {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+  }
+  .aside_contenedor {
+    height: 100%;
+    width: 52%;
+    background-image: url(../../img/about_images/1.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+  }
+  /* .aside_img {
+    background-image: url(img/about_images/1.png);
+    background-size: cover;
+    background-position: center;
+  } */
+  .mision-contenedor {
+    height: 100%;
+    width: 48%;
+    background-color: #ffcd1a;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4rem 3rem 4rem;
+}
+  .mision-title {
+      width: 230px;
+      height: 44px;
+      font-size: 20px;
+      text-align: start;
+      line-height: 44px;
+      background: linear-gradient(to right, #030303 90%, white 10%);
+      color: white;
+      padding: 0px 12px;
+      margin-bottom: 10px;
+  }
+  .mision-parrafo{
+      width: 526px;
+      height: 292px;
+      font-size: 20;
+      text-align: justify;
+      padding: 35 0 0 0;
+  }
+  .button_next{
+      width: 177px;
+      height: 46px;
+      text-align: center;
+      background-color: #030303;
+      color: #ffffff;
+      font-size: 20;
+  }
+  .button__link{
+      text-decoration: none;
+      color: #ffffff;
+      align-items: end;
+      display: flex;
+      width: 526px;
+      justify-content: flex-end;
+      padding: 45 0 0 50;
+  }
+  

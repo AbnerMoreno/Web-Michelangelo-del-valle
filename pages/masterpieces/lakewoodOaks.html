@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/masterpieces/lakewoodOaks.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MASTERPIECES</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav_contenedor">
+        <img
+          class="nav__logo"
+          src="../../img/black.png"
+          alt="logo de michelangelo del valle"
+          srcset=""
+        />
+
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a class="nav__link" href="../../index.html">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="../aboutus/about.html">ABOUT US</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="../masterpieces/lakewoodOaks.html"
+              ><b>MASTERPIECES</b></a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="../solutions/solutions.html"
+              >SOLUTIONS</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="../contact/contact.html">CONTACT</a>
+          </li>
+        </ul>
+
+        <ul class="nav_social-media">
+          <li class="social-media__logos">
+            <img
+              src="../../img/logos_redes/INSTAGRAM ICON.svg"
+              alt="logo de instagram"
+            />
+          </li>
+          <li class="social-media__logos">
+            <img
+              src="../../img/logos_redes/FACEBOOK ICON.svg"
+              alt="logo de facebook"
+            />
+          </li>
+          <li class="social-media__logos">
+            <img
+              src="../../img/logos_redes/LINKEDIN ICON.svg"
+              alt="logo de linkedin"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contenedor">
+      <aside class="aside_contenedor">
+        <img
+          class="menu_pieces"
+          src="../../img/MENÚ HOME.png"
+          alt=""
+          srcset=""
+        />
+        <nav class="nav_sub-menu">
+          <ul class="nav__itemss">
+            <li class="nav__itemsss item_home" id="LewelOfTheCrown">
+              <a class="nav__links" href="LewelOfTheCrown.html">JEWEL OF THE...</a>
+            </li>
+            <li class="nav__itemsss">
+              <a
+                class="nav__links focus"
+                href="lakewoodOaks.html"
+                id="lakewoodOaksItem"
+                >LAKEWOOD OAKS</a>
+            </li>
+            <li class="nav__itemsss" id="mainTownItem">
+              <a class="nav__links" href="themaintown.html">THE MAIN TOWN</a>
+            </li>
+            <li class="nav__itemsss" id="ironRootsItem">
+              <a class="nav__links" href="theironroots.html">THE IRON ROOTS</a>
+            </li>
+            <li class="nav__itemsss" id="santaFeMansionItem">
+              <a class="nav__links" href="mansionsantafe.html"
+                >MANSIÓN SANTA FE</a
+              >
+            </li>
+            <li class="nav__itemsss" id="GrayOnyxTower">
+              <a class="nav__links" href="GrayOnyxTower.html">GRAY ONYX TOWER</a>
+            </li>
+            <li class="nav__itemsss" id="QuenbyOnyxTower">
+              <a class="nav__links" href="QuenbyOnyxTower.html"
+                >QUENBY ONYX TOWER</a
+              >
+            </li>
+            <li class="nav__itemsss" id="TheMainEntrance">
+              <a class="nav__links" href="TheMainEntrance.html"
+                >THE MAIN ENTRANCE</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <section class="mision-contenedor">
+        <h1 class="mision-title">LAKEWOOD OAKS...</h1>
+        <a
+          class="mision-web"
+          href="https://lakewoodoaksonlakeconroe.com/"
+          target="_blank"
+          >See website</a
+        >
+        <p class="mision-parrafo redhat">
+          An exceptional, ecological, private, and innovative resort development
+          with high quality architectural design. These developments are located
+          in front of a beautiful lake, surrounded by wooded areas, and feature
+          amenities such as a dock, spa, and an exclusive clubhouse.
+        </p>
+      </section>
+      <figure class="open_gallery" data-page-id="LAKEWOODOAKS">
+        <img class="gallery_action" src="../../img/masterpieces/CLIC AQUÍ.png" alt="" srcset="">
+      </figure>
+      <a class="button__link" href="vision.html">
+        <button type="button" class="button_next">NEXT MASTERPIECE</button>
+      </a>
+    </main>
+    <script src="gallery.js"></script>
+  </body>
+  <div id="galleryOverlay" class="gallery-overlay">
+    <div class="gallery-cansado">
+      <span id="galleryClose" class="gallery-close">&times;</span>
+      <span id="galleryCounter" class="gallery-counter"></span>
+    </div>
+    <div id="galleryContent" class="gallery-content">
+      <!-- Aquí se agregarán las imágenes de la galería dinámicamente -->
+    </div>
+    <div id="galleryControls" class="gallery-controls">
+      <button id="prevBtn" class="gallery-btn">&#10094;</button>
+      <!-- <span id="galleryCounter" class="gallery-counter"></span> -->
+      <button id="nextBtn" class="gallery-btn">&#10095;</button>
+    </div>
+  </div>
+</html>
