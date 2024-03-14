@@ -6,14 +6,13 @@
 }
 .nav_contenedor {
   width: 100%;
-  height: 24vh;
+  height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: space-around;
   flex-wrap: wrap;
   padding: 64px;
-  margin-bottom: 28px;
 }
 .nav__logo {
   width: 166px;
@@ -39,6 +38,8 @@
 }
 .sub_menu {
   display: flex;
+  height: 74%;
+  margin-top: 2rem;
 }
 .menu_img {
   width: 166px;
@@ -72,7 +73,7 @@
 }
 .home_aside {
   width: 70%;
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,8 +84,8 @@
   position: relative;
 }
 .venta_home {
-  width: 287px;
-  height: 444px;
+  width: 21vw;
+  height: 71vh;
 }
 .home-title_1,
 .home-title_2 {
@@ -128,7 +129,6 @@
   display: flex;
   width: 100%;
   height: 55vh;
-  margin-top: -155px;
 }
 .video_home,
 .fondo_white {
@@ -154,7 +154,7 @@
 .fond-p {
   font-size: 48px;
 }
-.animated-text{
+.animated-text {
   font-size: 48px;
   /* font-weight: 800; */
   min-width: 280px;
@@ -162,22 +162,22 @@
   align-items: center;
   justify-content: center;
 }
-.animated-text p{
+.animated-text p {
   position: relative;
 }
-.animated-text p::before{
+.animated-text p::before {
   content: "";
   animation: words 20s infinite;
 }
-.animated-text p::after{
+.animated-text p::after {
   content: "";
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
   background-color: #ffffff;
-  border-left: 2px solid #ffcd1a ;
-  right: -8px; 
-  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+  border-left: 2px solid #ffcd1a;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
 .logos_foter {
   /* background-image: url(img/Rectangle\ 50.png); */
@@ -193,7 +193,7 @@
   position: relative;
 }
 .logos_foter::before,
-.logos_foter::after{
+.logos_foter::after {
   position: absolute;
   top: 0;
   width: 200px;
@@ -201,11 +201,11 @@
   content: "";
   z-index: 2;
 }
-.logos_foter::before{
+.logos_foter::before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
 }
-.logos_foter::after{
+.logos_foter::after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
 }
@@ -242,7 +242,7 @@
   animation-fill-mode: backwards;
 }
 
-                               /*------------------ ANIMACIONES CSS ------------------------- */
+/*------------------ ANIMACIONES CSS ------------------------- */
 
 @keyframes show {
   from {
@@ -265,32 +265,54 @@
 }
 
 @keyframes cursor {
-  to{
+  to {
     border-left: 2px solid #ffffff;
   }
 }
 @keyframes words {
-  0%,20%{
+  0%,
+  20% {
     content: "Architecture";
   }
-  21%,40%{
+  21%,
+  40% {
     content: "Marketing";
   }
-  41%,60%{
+  41%,
+  60% {
     content: "Finances";
   }
-  61%,80%{
+  61%,
+  80% {
     content: "Management";
   }
-  81%,100%{
+  81%,
+  100% {
     content: "Construction";
   }
 }
 @keyframes typing {
-  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
     width: 0;
   }
-  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
     width: calc(100% + 8px);
   }
 }
