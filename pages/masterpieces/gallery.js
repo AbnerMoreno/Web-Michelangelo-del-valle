@@ -170,9 +170,4 @@ document.addEventListener("DOMContentLoaded", function () {
     currentImgIndex = (currentImgIndex + 1) % images.length;
     updateGallery();
   });
-  // document.addEventListener('click', function(event) {
-  //   if (!galleryContent.contains(event.target) && event.target !== openGallery) {
-  //     hideGallery();
-  //   }
-  // });
 });

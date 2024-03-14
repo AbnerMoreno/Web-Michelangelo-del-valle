@@ -70,10 +70,22 @@
   justify-content: center;
 }
 .theironportada{
-  background-image: url(../../img/masterpieces/PORTADA\ THE\ IRON\ ROOTS.png)!important;
+  background-image: url(../../img/masterpieces/THE\ IRON\ ROOTS.png)!important;
 }
 .themaintown{
   background-image: url(../../img/masterpieces/PORTADA\ THE\ MAIN\ TOWN.png)!important;
+}
+.jewelofthecrown{
+  background-image: url(../../img/masterpieces/JEWEL\ OF\ THE\ CROWN.png)!important;
+}
+.grayonyxtower{
+  background-image: url(../../img/masterpieces/GRAY\ ONYX\ TOWER.png)!important;
+}
+.mansionsantafe{
+  background-image: url(../../img/masterpieces/MANSION\ SANTA\ FE.png)!important;
+}
+.themainentrace{
+  background-image: url(../../img/masterpieces/THE\ MAIN\ TOWN.png)!important;
 }
 .submenu-items {
   display: flex;
