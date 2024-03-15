@@ -1,75 +1,3 @@
-// function cambiarContenido(letra) {
-//     let letraD = document.getElementById('letraD');
-//     let img_services = document.getElementById('img_services')
-//     let imgUrl1 = '../../img/solutions/FINANCE\ AND\ LEGAL.png';
-//     let imgUrl2 = '../../img/solutions/DESING\ AND\ BRANDING.png';
-//   let branding =
-//     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat volutpat.";
-//   let titulo, parrafo;
-//   switch (letra) {
-//     case "F":
-//       titulo = "FINANCES";
-//       parrafo = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.";
-//       img_services.style.backgroundImage= `url('${imgUrl1}')`;
-//       break;
-//     case "D":
-//       titulo = "DESING AND BRANDING";
-//       parrafo = branding;
-//       letraD.style.width = 'fit-content';
-//       letraD.style.fontSize= '24px';
-//       img_services.style.backgroundImage= `url('${imgUrl2}')`;
-//       break;
-//     case "C":
-//       titulo = "Título para C";
-//       parrafo = "Párrafo para C";
-//       break;
-//     case "A":
-//       titulo = "Título para A";
-//       parrafo = "Párrafo para A";
-//       break;
-//     case "S":
-//       titulo = "Título para S";
-//       parrafo = "Párrafo para S";
-//       break;
-//     default:
-//       titulo = "Título predeterminado";
-//       parrafo = "Párrafo predeterminado";
-//   }
-//   document.querySelector("#misionContenedor .mision-title").textContent =
-//     titulo;
-//   document.querySelector("#misionContenedor .mision-parrafo").textContent =
-//     parrafo;
-// }
-// function cambiarContenido(letra) {
-//   const letras = {
-//     F: {
-//       titulo: "FINANCES",
-//       parrafo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-//       imgUrl: '../../img/solutions/FINANCE\ AND\ LEGAL.png'
-//     },
-//     D: {
-//       titulo: "DESING AND BRANDING",
-//       parrafo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-//       imgUrl: '../../img/solutions/DESING\ AND\ BRANDING.png'
-//     },
-//     C: { titulo: "Título para C", parrafo: "Párrafo para C" },
-//     A: { titulo: "Título para A", parrafo: "Párrafo para A" },
-//     S: { titulo: "Título para S", parrafo: "Párrafo para S" },
-//     default: { titulo: "Título predeterminado", parrafo: "Párrafo predeterminado" }
-//   };
-
-//   const { titulo, parrafo, imgUrl } = letras[letra] || letras.default;
-
-//   document.getElementById('letraD').style.width = letra === "D" ? 'fit-content' : '';
-//   document.getElementById('letraD').style.fontSize = letra === "D" ? '24px' : '';
-
-//   document.querySelector("#misionContenedor .mision-title").textContent = titulo;
-//   document.querySelector("#misionContenedor .mision-parrafo").textContent = parrafo;
-
-//   if (imgUrl) {
-//     document.getElementById('img_services').style.backgroundImage = `url('${imgUrl}')`;
-//   }
-// }
 function cambiarContenido(letra) {
   const letraDContainer = document.getElementById("letraD");
   const imgServices = document.getElementById("img_services");
@@ -109,7 +37,16 @@ function cambiarContenido(letra) {
     },
   };
 
-  
+  const imageUrls = Object.values(contenidoPorLetra).map(item => item.imgUrl);
+  preloadImages(imageUrls);
+
+  function preloadImages(urls) {
+    urls.forEach(url => {
+      const image = new Image();
+      image.src = url;
+    });
+  }
+
   const contenido = contenidoPorLetra[letra] || contenidoPorLetra["default"];
 
   document.querySelector("#misionContenedor .mision-title").textContent =
