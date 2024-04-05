@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentImgIndex = 0;
   let images = [];
 
+  function preloadImages() {
+    images.forEach((imageURL) => {
+      const img = new Image();
+      img.src = imageURL;
+    });
+  }
   function showGallery() {
     galleryOverlay.style.display = "block";
     updateGallery();
@@ -159,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     currentImgIndex = 0;
+    preloadImages();
     showGallery();
   });
   galleryClose.addEventListener("click", hideGallery);

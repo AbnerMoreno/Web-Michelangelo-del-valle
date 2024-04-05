@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../css/solutions/solutions.css" />
+  <link rel="stylesheet" href="../../responsive.css">
   <title>solutions</title>
 </head>
 
@@ -30,16 +31,18 @@
         </li>
       </ul>
 
-        <ul class="nav_social-media">
-          <li class="social-media__logos">
-            <a href="https://www.linkedin.com/company/michelangelodelvalle/" target="_blank" rel="noopener noreferrer">
-              <img
-              src="../../img/logos_redes/LINKEDIN ICON.svg"
-              alt="logo de linkedin"
-            />
-            </a>
-          </li>
-        </ul>
+      <ul class="nav_social-media">
+        <li class="social-media__logos">
+          <a href="https://www.linkedin.com/company/michelangelodelvalle/" target="_blank" rel="noopener noreferrer">
+            <img src="../../img/logos_redes/LINKEDIN ICON.svg" alt="logo de linkedin" />
+          </a>
+        </li>
+        <li class="social-media__logos">
+          <label for="check">
+            <img src="../../img/icons/menu_black.png" alt="logo de linkedin" />
+          </label>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="contenedor">
@@ -56,27 +59,41 @@
         <li id="C_box" class="box" onclick="cambiarContenido('C')">
           <button class="circle">C</button>
         </li>
-        <li  id="A_box" class="box" onclick="cambiarContenido('A')">
+        <li id="A_box" class="box" onclick="cambiarContenido('A')">
           <button class="circle">A</button>
         </li>
-        <li  id="S_box" class="box" onclick="cambiarContenido('S')">
+        <li id="S_box" class="box" onclick="cambiarContenido('S')">
           <button class="circle">S</button>
         </li>
       </ul>
     </nav>
     <section class="mision-contenedor" id="misionContenedor">
       <h1 class="mision-title font25" id="letraD">
-        LEGAL AND FINANCIAL ADVICE
       </h1>
       <p class="mision-parrafo">
-        Our team of legal and financial experts will be by your side
-        throughout your entire project, providing clear and concise guidance
-        on every step. We'll handle the legalese and financial intricacies, so
-        you can focus on bringing your vision to life.
       </p>
     </section>
     <aside class="aside_contenedor" id="img_services"></aside>
     <aside class="finances_img"></aside>
+
+    <input type="checkbox" id="check" style="display: none;">
+    <ul class="nav__items-mobile">
+      <li class="nav__item item_home">
+        <a class="nav__link" href="../../index.html">HOME</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../aboutus/about.html">ABOUT US</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../masterpieces/lakewoodOaks.html">MASTERPIECES</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../solutions/solutions.html"><b>SOLUTIONS</b></a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../contact/contact.html">CONTACT</a>
+      </li>
+    </ul>
   </main>
   <script src="changesContend.js"></script>
 </body>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../css/masterpieces/lakewoodOaks.css" />
+  <link rel="stylesheet" href="../../responsive.css">
   <title>MASTERPIECES</title>
 </head>
 
@@ -13,7 +14,7 @@
       <img class="nav__logo" src="../../img/black.png" alt="logo de michelangelo del valle" srcset="" />
 
       <ul class="nav__items">
-        <li class="nav__item item_home">
+        <li class="nav__item">
           <a class="nav__link" href="../../index.html">HOME</a>
         </li>
         <li class="nav__item">
@@ -30,19 +31,22 @@
         </li>
       </ul>
 
-        <ul class="nav_social-media">
-          <li class="social-media__logos">
-            <a href="https://www.linkedin.com/company/michelangelodelvalle/" target="_blank" rel="noopener noreferrer">
-              <img
-              src="../../img/logos_redes/LINKEDIN ICON.svg"
-              alt="logo de linkedin"
-            />
-            </a>
-          </li>
-        </ul>
+      <ul class="nav_social-media">
+        <li class="social-media__logos">
+          <a href="https://www.linkedin.com/company/michelangelodelvalle/" target="_blank" rel="noopener noreferrer">
+            <img src="../../img/logos_redes/LINKEDIN ICON.svg" alt="logo de linkedin" />
+          </a>
+        </li>
+        <li class="social-media__logos">
+          <label for="check">
+            <img src="../../img/icons/menu_black.png" alt="menu responsive" />
+          </label>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="contenedor">
+    <input style="display: none;" type="checkbox" name="menuMasterPiece" id="menuMasterPiece">
     <aside class="aside_contenedor">
       <nav class="nav_sub-menu">
         <ul class="nav__itemss">
@@ -74,8 +78,16 @@
       </nav>
     </aside>
     <section class="mision-contenedor">
-      <h1 class="mision-title redhat">THE MAIN TOWN</h1>
-      <a class="mision-web" href="https://themaintown.com/" target="_blank">See website</a>
+      <div class="titulosResponsive">
+        <div class="title1responsive">
+          <h1 class="mision-title redhat">THE MAIN TOWN</h1>
+          <a class="mision-web" href="https://themaintown.com/" target="_blank">See website</a>
+        </div>
+        <label class="menuMasterPiece" for="menuMasterPiece">
+          <h1 class="seeAll">X</h1>
+          <h2 class="seeAll2">See all</h2>
+        </label>
+      </div>
       <p class="mision-parrafo redhat">
         The Main Town, located in Baytown, Texas, represents an innovative,
         high-impact initiative with a business focus. This development stands
@@ -89,6 +101,24 @@
     <a class="button__link" href="theironroots.html">
       <button type="button" class="button_next">NEXT MASTERPIECE</button>
     </a>
+    <input type="checkbox" id="check" style="display: none;">
+    <ul class="nav__items-mobile">
+      <li class="nav__item item_home">
+        <a class="nav__link" href="../../index.html">HOME</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../aboutus/about.html">ABOUT US</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../masterpieces/lakewoodOaks.html"><b>MASTERPIECES</b></a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../solutions/solutions.html">SOLUTIONS</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="../contact/contact.html">CONTACT</a>
+      </li>
+    </ul>
   </main>
   <script src="gallery.js"></script>
 </body>
