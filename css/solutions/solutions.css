@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .nav_contenedor {
   background-color: #ffffff;
   width: 96%;
@@ -16,6 +17,7 @@
   margin-left: 2rem;
   margin-right: 2rem;
 }
+
 .nav_contenedor {
   background-color: #ffffff;
   width: 96%;
@@ -54,15 +56,15 @@
 .nav__link:hover {
   color: #000000;
 }
+
 .contenedor {
   width: 100%;
   height: 88vh;
   display: flex;
-  /* background-image: url(../../img/solutions/BACKGROUND\ SERVICES.webp); */
-  /* background-size: cover; */
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
 .aside_contenedor {
   height: 85%;
   width: 40%;
@@ -70,18 +72,26 @@
   background-size: contain;
   /* background-size: cover; */
   background-position: center;
-  transition: background-image 0.5s ease-in-out; /* Transición para el fondo de la imagen */
+  transition: background-image 0.5s ease-in-out;
+  /* Transición para el fondo de la imagen */
 }
+
 .mision-contenedor {
-  height: 85%;
-  width: 40%;
+  height: 90%;
+  width: 60%;
   background-color: #ffffff;
   display: flex;
   padding: 50px 50px 40px 50px;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 0.5rem;
+  /* border-right: 1px solid black;
+  border-bottom: 1px solid black; */
+  -webkit-box-shadow: 10px 10px 18px -6px rgba(168,168,168,1);
+  -moz-box-shadow: 10px 10px 18px -6px rgba(168,168,168,1);
+  box-shadow: 10px 10px 18px -6px rgba(168,168,168,1);
 }
+
 .mision-title {
   width: fit-content;
   height: 56px;
@@ -93,21 +103,25 @@
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
+
 .font25 {
   font-size: 25px;
 }
+
 .mision-parrafo {
-  width: 366px;
+  width: auto;
   height: 332px;
-  font-size: 20;
+  font-size: 20px;
   text-align: justify;
   padding: 35 0 0 0;
 }
+
 .container_menu {
   display: flex;
   flex-direction: column;
   height: 85%;
 }
+
 .box {
   width: 100px;
   height: 72px;
@@ -119,17 +133,21 @@
   border: 1px solid black;
   border-top: 0px solid;
 }
+
 .box1 {
   background-color: #000000;
   transition: background-color 0.3s ease-in-out;
 }
-.box:hover{
+
+.box:hover {
   background-color: #000000
 }
-.circle:hover{
+
+.circle:hover {
   background-color: #000000;
   color: #d9d9d9;
 }
+
 .circle {
   width: 32px;
   height: 32px;
@@ -143,6 +161,7 @@
   border: none;
   transition: background-color 0.3s ease-in-out;
 }
+
 .circle1 {
   background-color: #ffffff;
   color: #000000;
@@ -153,13 +172,19 @@
   animation-iteration-count: infinite;
 }
 
+.bordetop {
+  border-top: 1px solid black;
+}
+
 @keyframes girar {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(45deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -178,72 +203,74 @@
     align-items: center;
     margin-left: 2rem;
     margin-right: 2rem;
-}
+  }
 
-.nav__items {
-  display: none;
-}
+  .nav__items {
+    display: none;
+  }
 
-.contenedor {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  background-image: none;
-  background-size: cover;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-between;
-}
+  .contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: none;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+  }
 
-.container_menu {
-  display: inline-block;
-  height: auto;
-  width: 95%;
-  /* justify-content: space-around; */
-}
+  .container_menu {
+    display: inline-block;
+    height: auto;
+    width: 95%;
+    /* justify-content: space-around; */
+  }
 
-.submenu{
-  display: flex;
-}
-.mision-contenedor {
-  height: 38vh;
-  width: 95%;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  justify-content: center;
-  flex-direction: column;
-}
-.mision-parrafo {
-  width: auto;
-  height: 200px;
-  font-size: 20;
-  text-align: justify;
-  padding: 35 0 0 0;
-}
+  .submenu {
+    display: flex;
+  }
 
-.aside_contenedor {
-  height: 46vh;
-  width: 95%;
-  /* background-image: url(../../img/solutions/FINANCE\ AND\ LEGAL.png); */
-  background-size: contain;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 0.5s ease-in-out;
-}
+  .mision-contenedor {
+    height: 38vh;
+    width: 95%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.mision-title {
-  width: fit-content;
-  height: 46px;
-  font-size: 20x;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  color: #000000;
-  padding: 0;
-  margin-bottom: 0;
-}
+  .mision-parrafo {
+    width: auto;
+    height: 200px;
+    font-size: 20;
+    text-align: justify;
+    padding: 35 0 0 0;
+  }
+
+  .aside_contenedor {
+    height: 46vh;
+    width: 95%;
+    /* background-image: url(../../img/solutions/FINANCE\ AND\ LEGAL.png); */
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+  }
+
+  .mision-title {
+    width: fit-content;
+    height: 46px;
+    font-size: 20x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: #000000;
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
