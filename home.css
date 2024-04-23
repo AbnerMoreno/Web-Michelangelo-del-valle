@@ -19,8 +19,9 @@
 }
 
 .nav__logo {
-  width: 128px;
-  height: 45px;
+  width: auto;
+  height: 53px;
+  margin-left: 23px;
 }
 
 .nav__items {
@@ -30,11 +31,17 @@
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
+  text-decoration: none;
   padding-top: 0.8rem;
+  color: #000000;
 }
 
 .nav__link {
   text-decoration: none;
+  list-style: none;
+  color: #000000;
+}
+.nav__link:hover{
   color: #000000;
 }
 
@@ -55,90 +62,10 @@
   margin-bottom: 3rem;
 }
 
-.animated-text {
-  font-size: 48px;
-  min-width: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.animated-text p {
-  position: relative;
-}
-
-.animated-text p::before {
-  content: "";
-  animation: words 20s infinite;
-}
-
-.animated-text p::after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  background-color: #ffffff;
-  border-left: 2px solid #ffcd1a;
-  right: -8px;
-  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
-}
-@keyframes words {
-  0%,
-  20% {
-    content: "Architecture";
-  }
-
-  21%,
-  40% {
-    content: "Marketing";
-  }
-
-  41%,
-  60% {
-    content: "Finances";
-  }
-
-  61%,
-  80% {
-    content: "Management";
-  }
-
-  81%,
-  100% {
-    content: "Construction";
-  }
-}
-
-@keyframes typing {
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95% {
-    width: 0;
-  }
-
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85% {
-    width: calc(100% + 8px);
-  }
-}
 
 .logos_foter {
   background-color: rgb(255, 255, 255);
-  height: 30vh;
+  height: 27vh;
   overflow: hidden;
   padding: 60px 0;
   white-space: nowrap;
@@ -167,7 +94,7 @@
 
 .logos-slide {
   display: inline-block;
-  animation: 15s slider infinite linear;
+  animation: 40s slider infinite linear;
 }
 
 .logos_img {
@@ -185,11 +112,6 @@
   }
 }
 
-@keyframes cursor {
-  to {
-    border-left: 2px solid #ffffff;
-  }
-}
 .buscador {
   background-color: #000000;
   width: 50%;

@@ -1,157 +1,195 @@
+<!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="home.css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="canonical" href="https://michelangelodelvalle.com">
   <meta name="robots" content="index, follow">
   <meta name="description" content="We offer a unique comprehensive service, guiding our clients from the
-  conceptualization to the complete execution of masterpieces. Our
-  proposal stands out for its quality, complete approach and the
-  transformation of each project into a work of art. 360° solutions for
-  your vision.">
-  <title>MICHELANGELO DEL VALLE</title>
+    conceptualization to the complete execution of masterpieces. Our
+    proposal stands out for its quality, complete approach and the
+    transformation of each project into a work of art. 360° solutions for
+    your vision.">
+  <title>Home</title>
 </head>
 
 <body>
   <div class="contenedor">
     <header>
       <nav class="nav_contenedor">
-        <img class="nav__logo" src="img/logo_blanco.webp" alt="logo de michelangelo del valle" srcset="" />
-        <ul class="nav_social-media">
-          <li class="social-media__logos">
-            <a href="https://www.linkedin.com/company/michelangelodelvalle/" target="_blank" rel="noopener noreferrer">
-              <img src="../../img/logos_redes/LINKEDIN ICON.svg" alt="logo de linkedin" />
-            </a>
+        <img class="nav__logo" src="img/home/MICHELANGELO.jpg" alt="logo de michelangelo del valle" srcset="" />
+
+        <ul class="nav__items">
+          <li class="nav__item item_home">
+            <a class="nav__link" href="index.html"><b>HOME</b></a>
           </li>
-          <li class="social-media__logos">
-            <label for="check">
-              <img src="img/icons/menu_white.png" alt="logo de linkedin" />
-            </label>
+          <li class="nav__item">
+            <a class="nav__link" href="pages/aboutus/about.html">ABOUT US</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="pages/masterpieces/LewelOfTheCrown.html">MASTERPIECES</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="pages/solutions/solutions.html">EXPERTISE</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="pages/contact/contact.html">CONTACT</a>
           </li>
         </ul>
       </nav>
     </header>
-    <input type="checkbox" id="check" style="display: none;">
-    <ul class="nav__items-mobile">
-      <li class="nav__item item_home">
-        <a class="nav__link" href="index.html"><b>HOME</b></a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="pages/aboutus/about.html">ABOUT US</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="pages/masterpieces/lakewoodOaks.html">MASTERPIECES</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="pages/solutions/solutions.html">SOLUTIONS</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="pages/contact/contact.html">CONTACT</a>
-      </li>
-    </ul>
-    <main>
-      <section class="sub_menu">
-        <img class="menu_img" src="./img/MENU_HOME.webp" alt="menu" srcset="" />
-        <nav class="nav_sub-menu">
-          <ul class="nav__items">
-            <li class="nav__item item_home">
-              <a class="nav__link" href="index.html"><b>HOME</b></a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="pages/aboutus/about.html">ABOUT US</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="pages/masterpieces/lakewoodOaks.html">MASTERPIECES</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="pages/solutions/solutions.html">SOLUTIONS</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="pages/contact/contact.html">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-        <aside class="home_aside">
-          <div>
-            <h1 class="home-title_1">We are not the best,</h1>
-            <h2 class="home-title_2">we are the only ones</h2>
-          </div>
-          <figure>
-            <img class="venta_home" src="img/ventahome.webp" alt="" />
-          </figure>
-        </aside>
-      </section>
-      <section class="content_ext">
-        <div class="video_home">
-          <video class="video-MV video_home" playsinline autoplay muted preload="auto">
-            <source src="img/Video_Home Page.mp4" type="video/mp4" />
-          </video>
-        </div>
+    <section class="principal">
+
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="fondo_white">
           <p class="fond-p">We help you with the</p>
-          <div class="animated-text">
-            <p class="fond-p pfond"></p>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="img/home/Group 86.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <img src="img/home/Group 87.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <img src="img/home/Group 88.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <img src="img/home/Group 89.png" class="d-block w-100" alt="...">
           </div>
         </div>
-      </section>
-      <section class="logos_foter">
-        <div class="logos-slide">
-          <img class="logos_img" src="img/logos_proyectos/AllgoodBuildersINCLogo.webp"
-            alt="Logo de All good Builders INC, socio." />
-          <img class="logos_img" src="img/logos_proyectos/GrayOnyxTowerLogo.webp"
-            alt="Logo de Gray Onyx Tower, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/QuenbyOnyxTowerLogo.webp"
-            alt="logo Quenby Onyx Tower,proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/LakewoodOaksLogo.webp"
-            alt="logo de Lake Wood Oaks, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/LewelOfTheCrownLogo.webp"
-            alt=" logo de Lewel Of The Crown, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/MansionSantaFeLogo.webp"
-            alt="logo Mansion Santa Fe, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/MichelangeloDelValleLogo.webp"
-            alt="logo Michelangelo Del Valle, finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/TheIronRootsLogo.webp"
-            alt="logo The Iron Roots, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/TheMainEntranceLogo.webp"
-            alt="logo The Main Entrance, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/TheMainTownLogo.webp"
-            alt="logo The Main Town, proyecto finca raiz texas" />
+      </div>
+    </section>
+    <section class="logos_foter">
+      <div class="logos-slide">
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGO_NEGRO-10.jpg"
+          alt="Logo de All good Builders INC, socio." />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-02.webp"
+          alt="Logo de Gray Onyx Tower, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-03.webp"
+          alt="logo Quenby Onyx Tower,proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-01.webp"
+          alt="logo de Lake Wood Oaks, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/THE JEWEL LOGOS-10.webp"
+          alt=" logo de Lewel Of The Crown, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-05.webp"
+          alt="logo Mansion Santa Fe, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-06.webp"
+          alt="logo Michelangelo Del Valle, finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-09.webp"
+          alt="logo The Iron Roots, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-07.webp"
+          alt="logo The Main Town, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-08.webp"
+          alt="logo The Main Entrance, proyecto finca raiz texas" />
+      </div>
+      <div class="logos-slide">
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGO_NEGRO-10.jpg"
+          alt="Logo de All good Builders INC, socio." />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-02.webp"
+          alt="Logo de Gray Onyx Tower, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-03.webp"
+          alt="logo Quenby Onyx Tower,proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-01.webp"
+          alt="logo de Lake Wood Oaks, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/THE JEWEL LOGOS-10.webp"
+          alt=" logo de Lewel Of The Crown, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-05.webp"
+          alt="logo Mansion Santa Fe, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-06.webp"
+          alt="logo Michelangelo Del Valle, finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-09.webp"
+          alt="logo The Iron Roots, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-07.webp"
+          alt="logo The Main Town, proyecto finca raiz texas" />
+        <img class="logos_img" src="img/logos_proyectos/logosBlack/LOGOS_NEGRO-08.webp"
+          alt="logo The Main Entrance, proyecto finca raiz texas" />
+      </div>
+    </section>
+    <aside class="buscador">
+      <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+          aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+        </span>
+      </div>
+    </aside>
+    <footer class="footer-contenedor">
+      <div class="textos-footer">
+        <a class="textos-footer_links" href="">Privacy Policy</a>
+        <a class="textos-footer_links" href="">Processing of personal data</a>
+        <a class="textos-footer_links" href="">Terms and Conditions</a>
+      </div>
+      <figure>
+        <img src="img/lineaFooter.png" alt="">
+      </figure>
+      <div class="textos-footer">
+        <a class="textos-footer_links" href="">Join Us</a>
+        <a class="textos-footer_links" href="">Contact Us</a>
+        <a class="textos-footer_links" href="">PQRS</a>
+      </div>
+      <figure>
+        <img src="img/lineaFooter.png" alt="">
+      </figure>
+      <div class="textos-footer">
+        <a class="textos-footer_links" href="">Masterpieces</a>
+        <a class="textos-footer_links" href="">Our team</a>
+        <a class="textos-footer_links" href="">Services</a>
+      </div>
+      <figure>
+        <img src="img/lineaFooter.png" alt="">
+      </figure>
+      <div>
+        <h1 class="titulo_follows">Follow us!</h1>
+        <div class="footer_follows">
+          <figure>
+            <img class="img_follows" src="img/logos_redes/INSTAGRAM ICON.png" alt="" srcset="">
+          </figure>
+          <figure>
+            <img class="img_follows" src="img/logos_redes/LINKEDIN ICON.png" alt="" srcset="">
+          </figure>
+          <figure>
+            <img class="img_follows" src="img/logos_redes/FACEBOOK ICON.png" alt="" srcset="">
+          </figure>
         </div>
-        <div class="logos-slide">
-          <img class="logos_img" src="img/logos_proyectos/AllgoodBuildersINCLogo.webp"
-            alt="Logo de All good Builders INC, socio." />
-          <img class="logos_img" src="img/logos_proyectos/GrayOnyxTowerLogo.webp"
-            alt="Logo de Gray Onyx Tower, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/QuenbyOnyxTowerLogo.webp"
-            alt="logo Quenby Onyx Tower,proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/LakewoodOaksLogo.webp"
-            alt="logo de Lake Wood Oaks, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/LewelOfTheCrownLogo.webp"
-            alt=" logo de Lewel Of The Crown, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/MansionSantaFeLogo.webp"
-            alt="logo Mansion Santa Fe, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/MichelangeloDelValleLogo.webp"
-            alt="logo Michelangelo Del Valle, finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/TheIronRootsLogo.webp"
-            alt="logo The Iron Roots, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/TheMainEntranceLogo.webp"
-            alt="logo The Main Entrance, proyecto finca raiz texas" />
-          <img class="logos_img" src="img/logos_proyectos/TheMainTownLogo.webp"
-            alt="logo The Main Town, proyecto finca raiz texas" />
-        </div>
-      </section>
-      <footer class="footer_derechos">
-        <figure>
-          <img class="footer_img" src="img/footer/derechos.png" alt="" />
-        </figure>
-      </footer>
-    </main>
+      </div>
+      <figure>
+        <img src="img/lineaFooter.png" alt="">
+      </figure>
+      <div>
+        <h1 class="titulo_follows">Visit us!</h1>
+        <p class="texto_visit">2511 Willowick Houston, Texas</p>
+      </div>
+    </footer>
+    <div class="derechos">
+      <p>© 2024 Michelangelo del Valle, All rights reserved</p>
+      <figure>
+        <img src="img/logoderechos.png" alt="" srcset="">
+      </figure>
+    </div>
   </div>
-  <!-- <script src="main.js"></script> -->
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </html>
