@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
 .contenedor {
   background-color: #000000;
 }
+
 .nav_contenedor {
   background-color: #ffffff;
   width: 100%;
@@ -41,14 +45,15 @@
   list-style: none;
   color: #000000;
 }
-.nav__link:hover{
+
+.nav__link:hover {
   color: #000000;
 }
 
 .fondo_white {
   width: 100%;
   display: flex;
-  height: 100%;
+  height: 90%;
   flex-direction: column;
   position: absolute;
   z-index: 9;
@@ -59,7 +64,6 @@
 
 .fond-p {
   font-size: 48px;
-  margin-bottom: 3rem;
 }
 
 
@@ -119,6 +123,7 @@
   margin-left: 1.5rem;
   margin-top: 5rem;
 }
+
 .footer-contenedor {
   height: 35vh;
   display: grid;
@@ -127,6 +132,7 @@
   align-items: center;
   justify-items: center;
 }
+
 .textos-footer {
   display: flex;
   flex-direction: column;
@@ -140,29 +146,34 @@
     font-weight: lighter;
   }
 }
+
 .titulo_follows {
   color: #ffffff;
   font-size: 24px;
 }
+
 .footer_follows {
   display: flex;
   gap: 1rem;
 }
+
 .img_follows {
   width: 35px;
   height: 35px;
 }
+
 .texto_visit {
   color: #ffffff;
   font-size: 15px;
 }
-.derechos{
-    width: 100%;
-    height: 18vh;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem 2rem 0rem 2rem;
-    align-items: center;
-    color: #ffffff;
+
+.derechos {
+  width: 100%;
+  height: 18vh;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 2rem 0rem 2rem;
+  align-items: center;
+  color: #ffffff;
 }
