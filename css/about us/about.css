@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contenedor {
@@ -37,6 +39,7 @@
     text-decoration: none;
     color: #000000;
 }
+
 .nav__logo {
     width: auto;
     height: 53px;
@@ -56,12 +59,15 @@
     align-items: center;
     color: #ffffff;
     font-weight: lighter;
+    margin-top: 1rem;
 
     .text-complement-resalt {
         font-weight: bold;
     }
 }
-
+.textosab{
+    animation: slideInLeft 2s ease forwards;
+}
 /* STYLE BUSINESS VALUES */
 .Businessvalues {
     height: 60vh;
@@ -70,15 +76,16 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin-top: 3rem;
 
     .Businessvalues-mission,
     .Businessvalues-vision {
         width: 526px;
-        height: 255px;
+        height: 290px;
         text-align: justify;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .Businessvalues-mission {
@@ -86,24 +93,27 @@
     }
 
     .Businessvalues-vision {
-        padding-left: 2rem;
+        padding-left: 1rem;
         box-shadow: -6px 5px 7px -5px rgba(0, 0, 0, 0.75);
     }
 
     .Businessvalues_titles {
         font-size: 20px;
         font-weight: bold;
+        animation: opacidad 1s ease forwards;
     }
 
     .Businessvalues_paragraphs {
         font-size: 16px;
         width: 493px;
-        height: 174px;
+        height: 204px;
+        /* padding-top: 1rem; */
+        animation: opacidad 2s ease forwards;
     }
 }
 
 /* STYLE THE CARDS SLIDER */
-.workTeam_title{
+/* .workTeam_title{
     margin-left: 8.5rem;
     margin-bottom: 3rem;
     letter-spacing: 15px;
@@ -236,8 +246,60 @@
     .wrapper .carousel {
         grid-auto-columns: 100%;
     }
+} */
+
+.number-projects {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    height: 60vh;
+    margin-top: 5rem;
+    animation: slideInLeft 4s ease forwards;
+
+    .textos-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .number-projects-title {
+        font-size: 96px;
+        font-weight: 900;
+        margin-bottom: 0px;
+    }
+
+    .number-projects-description,
+    .number-projects-description2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .number-projects-description2 {
+        margin-left: 1.8rem;
+    }
 }
 
+.aboutText {
+    height: 35vh;
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    margin-bottom: 8rem;
+
+    .titleAbout {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .parrafoAbout {
+        font-size: 21px;
+        text-align: justify;
+    }
+}
 
 /* STYLE FOOTER AND RIGHTS */
 
@@ -301,4 +363,30 @@
     align-items: center;
     color: #ffffff;
     background-color: #000000;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacidad {
+    0% {
+        opacity: 0;
+        font-size: 18px;
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+    }
 }

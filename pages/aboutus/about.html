@@ -49,32 +49,29 @@
     </header>
 
     <aside class="text-complement">
-      <p>We are not the best,<span class="text-complement-resalt">we are the only ones</span></p>
+      <p class="textosab">We are not the best,<span class="text-complement-resalt"> we are the only ones</span></p>
     </aside>
 
     <section class="Businessvalues">
       <article class="Businessvalues-mission">
         <h1 class="Businessvalues_titles">MISSION</h1>
-        <p class="Businessvalues_paragraphs">At Michelangelo del Valle, we stand out in the real estate sector
-          with excellence in design,
-          innovation and total commitment to customer satisfaction. We work tirelessly to lead the way in
-          creating unique and sustainable designs, exceeding expectations and reflecting our exclusivity and
-          dedication to quality. Each project is a masterpiece that fulfills the dreams of those who trust us.
+        <p class="Businessvalues_paragraphs">Our goal is to stand out in the real estate industry by delivering
+          exceptional design, innovation, and complete dedication to customer satisfaction. We work hard to lead the way
+          in creating unique and sustainable designs, surpassing expectations and demostrating our exclusivity and
+          commitment to quality. Each project we start is a masterpiece that fulfills the dreams of those who put their
+          trust in us.
         </p>
       </article>
 
       <article class="Businessvalues-vision">
         <h1 class="Businessvalues_titles">VISION</h1>
-        <p class="Businessvalues_paragraphs">We create innovative and quality milestones in Real Estate,
-          standing out as leaders. We seek not only
-          to offer exceptional properties, but to leave a positive footprint on lives, providing authenticity,
-          passion and distinction in every Michelangelo del Valle project. Our vision goes beyond
-          architecture, we aspire to deliver inspiring and lasting life experiences for a transformative
-          future.</p>
+        <p class="Businessvalues_paragraphs">We are le­aders in real estate­. We offer great prope­rties. We also try to
+          help pe­ople. We bring real passion to our work. We­ aim for unique projects each time­. We think about more
+          than just architecture­. We want to create inspiring life­ experience­s. We work toward making the future
+          be­tter.</p>
       </article>
     </section>
-
-    <section class="workTeam">
+    <!-- <section class="workTeam">
       <h1 class="workTeam_title">OUR TEAM <span class="workTeam_title-resaltado">LEADERS</span></h1>
       <aside class="workTeam-cards">
         <div class="wrapper">
@@ -114,8 +111,30 @@
           <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
       </aside>
-    </section>
+    </section> -->
 
+    <article class="number-projects">
+      <div class="textos-projects">
+        <p class="number-projects-title">+25</p>
+        <p class="number-projects-description">Employeers</p>
+      </div>
+      <div class="textos-projects">
+        <p class="number-projects-title">+12</p>
+        <p class="number-projects-description2">Ongoing <br> projects</p>
+      </div>
+      <div class="textos-projects">
+        <p class="number-projects-title">3</p>
+        <p class="number-projects-description">Cities</p>
+      </div>
+    </article>
+
+    <aside class="aboutText">
+      <h1 class="titleAbout">About Us</h1>
+      <p class="parrafoAbout">We are a company dedicated to transforming the conventional into authentic architectural masterpieces. With a
+        team of more than 20 talented professionals between Colombia and Houston, Texas, we use the art of design with
+        marketing strategy to offer you comprehensive solutions. From conceptualization to realization, we're here to
+        turn your dreams into reality.</p>
+    </aside>
     <footer class="footer-contenedor">
       <div class="textos-footer">
         <a class="textos-footer_links" href="">Privacy Policy</a>
@@ -123,7 +142,7 @@
         <a class="textos-footer_links" href="">Terms and Conditions</a>
       </div>
       <figure>
-        <img src="img/lineaFooter.png" alt="">
+        <img src="../../img/lineaFooter.png" alt="">
       </figure>
       <div class="textos-footer">
         <a class="textos-footer_links" href="">Join Us</a>
@@ -131,7 +150,7 @@
         <a class="textos-footer_links" href="">PQRS</a>
       </div>
       <figure>
-        <img src="img/lineaFooter.png" alt="">
+        <img src="../../img/lineaFooter.png" alt="">
       </figure>
       <div class="textos-footer">
         <a class="textos-footer_links" href="">Masterpieces</a>
@@ -139,7 +158,7 @@
         <a class="textos-footer_links" href="">Services</a>
       </div>
       <figure>
-        <img src="img/lineaFooter.png" alt="">
+        <img src="../../img/lineaFooter.png" alt="">
       </figure>
       <div>
         <h1 class="titulo_follows">Follow us!</h1>
@@ -156,7 +175,7 @@
         </div>
       </div>
       <figure>
-        <img src="img/lineaFooter.png" alt="">
+        <img src="../../img/lineaFooter.png" alt="">
       </figure>
       <div>
         <h1 class="titulo_follows">Visit us!</h1>
@@ -170,5 +189,44 @@
       </figure>
     </div>
 </body>
+<script>
+  // Función para contar hasta un número dado
+  function countTo(element, target) {
+    let current = 0;
+    const increment = Math.ceil(target / 900); // Velocidad de incremento
+
+    const timer = setInterval(function() {
+      current += increment;
+      if (current >= target) {
+        clearInterval(timer); // Detener la animación cuando se alcanza el valor objetivo
+        current = target; // Asegurarse de que llegue exactamente al valor objetivo
+      }
+      element.textContent = `+${current}`;
+    }, 120); // Intervalo de actualización (milisegundos)
+  }
+
+  // Función para activar el conteo cuando el elemento es visible en la ventana
+  function startCountingOnScroll() {
+    const titles = document.querySelectorAll('.number-projects-title');
+
+    titles.forEach(function(title) {
+      const target = parseInt(title.textContent); // Obtener el número objetivo
+      title.textContent = '0'; // Iniciar desde cero
+
+      // Verificar si el elemento es visible en la ventana
+      const observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          countTo(title, target); // Comenzar a contar hasta el número objetivo
+          observer.unobserve(title); // Dejar de observar una vez que comience el conteo
+        }
+      }, { threshold: 0.5 }); // Umbral de visibilidad (50%)
+
+      observer.observe(title); // Comenzar a observar el elemento
+    });
+  }
+
+  // Llamar a la función cuando la página haya terminado de cargar
+  window.addEventListener('load', startCountingOnScroll);
+</script>
 
 </html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contenedor {
+    /* background-color: #000000; */
+    background-color: transparent;
+}
+
+.nav_contenedor {
+    background-color: #ffffff;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+}
+
+.nav__logo {
+    width: auto;
+    height: 53px;
+    margin-left: 23px;
+}
+
+.nav__items {
+    width: 38rem;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 0.8rem;
+    color: #000000;
+}
+
+.nav__link {
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+
+.nav__link:hover {
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.imgCuadro{
+    width: 301px;
+    height: 301px;
+    object-fit: cover;
+}
+.galeria{
+    grid-area: galeria;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-contenedor {
+    height: 35vh;
+    display: grid;
+    background-color: #000000;
+    grid-template-columns: 0.6fr 0.1rem 0.7fr 0.1rem 0.7fr 0.1rem 0.7fr 0.1rem 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.textos-footer {
+    display: flex;
+    flex-direction: column;
+    border-color: #ffcd1a;
+    gap: 12px;
+
+    .textos-footer_links {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+}
+
+.titulo_follows {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.footer_follows {
+    display: flex;
+    gap: 1rem;
+}
+
+.img_follows {
+    width: 35px;
+    height: 35px;
+}
+
+.texto_visit {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.derechos {
+    width: 100%;
+    height: 18vh;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem 0rem 2rem;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+}
